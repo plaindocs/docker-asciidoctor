@@ -10,6 +10,7 @@ This Docker container provides:
 * Asciidoctor PDF (alpha)
 * Asciidoctor EPUB3 (alpha)
 * Source highlighting using CodeRay or Pygments
+* asciidoctor-fopub
 * Asciidoctor backends
 
 == How to use it
@@ -18,7 +19,7 @@ Just run:
 
 [source,bash]
 ----
-docker run -it -v <your directory>:/documents/ gscheibel/asciidoctor
+docker run -it -v <your directory>:/documents/ plaindocs/asciidoctor
 ----
 
 It will be directly mapped with [path]_/documents_ of the container.
