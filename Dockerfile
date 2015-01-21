@@ -15,8 +15,8 @@ RUN gem install --no-ri --no-rdoc asciidoctor-diagram && \
     mkdir /documents && \
     mkdir $BACKENDS && \
     (curl -LkSs https://api.github.com/repos/asciidoctor/asciidoctor-backends/tarball | tar xfz - -C $BACKENDS --strip-components=1) && \
-    git clone https://github.com/asciidoctor/asciidoctor-fopub /fopub
-
+    git clone https://github.com/asciidoctor/asciidoctor-fopub /fopub && \
+    /fopub/gradlew
 
 WORKDIR /documents
 VOLUME /documents
