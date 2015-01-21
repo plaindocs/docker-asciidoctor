@@ -1,5 +1,5 @@
 FROM fedora
-MAINTAINER Guillaume Scheibel <guillaume.scheibel@gmail.com>
+MAINTAINER Samuel Wright <lykoszine@gmail.com>
 
 RUN yum install -y tar make gcc ruby ruby-devel rubygems graphviz rubygem-nokogiri asciidoctor git
 RUN (curl -s -k -L -C - -b "oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u20-b26/jdk-8u20-linux-x64.tar.gz | tar xfz -)
